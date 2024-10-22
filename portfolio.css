@@ -1,0 +1,385 @@
+body{
+    margin: 0%;
+    /* background-image: linear-gradient(to right, #48CFCB, #f5f5f5); */
+    background-color: #f5f5f5;
+
+}
+/* body section */
+
+*{
+    color:#424242;
+}
+
+.appbar{
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+    background-color: #48CFCB;
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+    h1{
+        margin: 0%;
+        padding-left: 80px;
+        padding-top: 13px;
+    }
+    div{
+        padding-right: 80px;
+        padding-top: 20px;
+        span{
+            margin:15px;
+            font-size: large;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+    span:hover{
+        cursor: pointer;
+        border-bottom: 2px solid rgb(51, 51, 51);
+    }
+}
+@media only screen and (min-width:0px) and (max-width:570px){
+    .appbar{
+        
+        display: grid;
+        justify-content: center;
+        height: 12vh;
+        h1{
+            color: black;
+            padding:0%;
+            padding-left: 10px;
+            margin-top: 10px;
+            text-transform:capitalize;
+            text-align: center;
+            text-decoration: none;
+        }
+        div{
+            padding: 0%;
+            span{
+                margin: 0%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+/* @media only screen and (min-width:571px) and (max-width:1000px){
+
+} */
+/* appbar css and responsive  */
+
+
+.section1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    margin-left: 150px;
+    .sec1right{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-right: 200px;
+        h1{
+            font-size: xxx-large;
+            color: #48CFCB;
+        }
+        h3{
+            font-size: x-large;
+        }
+        p{
+            max-width: 250px;
+        }
+        a{
+            font-size: 20px;
+            padding-right: 10px;
+        }
+    }
+    .sec1left{
+        img{
+            border-radius: 49%;
+            border: 2px solid #48CFCB;
+            box-shadow: 1px 1px 600px 2px #48CFCB;
+        }
+    }
+}
+@media only screen and (min-width:0px) and (max-width:570px){
+    .section1{
+        display: grid;
+        margin: 36px;
+        padding-bottom: 30px;
+        .sec1left{
+            img{
+                max-width: 300px;
+                max-height: 250px;
+                
+            }
+        }
+        .sec1right{
+            padding: 0%;
+            h3{
+                padding-left: 45px;
+            }
+            p{
+                text-align: center;
+                padding-left: 25px;
+            }
+            span{
+                display: flex;
+                justify-content: center;
+                
+            }
+
+        }
+    }
+}
+/* section1 responsive and laptop view css */
+
+.headers{
+    h1{
+        text-align: center;
+        font-size: xxx-large;
+        margin-top: 150px;
+        color: #48CFCB;
+    }
+    h3{
+        color: rgb(160, 160, 160);
+        text-align: center;
+        margin-bottom: 120px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:570px){
+    .headers{
+        h1{
+            font-size: 40px;
+            margin-top: 30px;
+            color: #090c16;
+            margin-bottom: 0%;
+        }
+        h3{
+            font-size: 15px;
+            margin-bottom: 20px;
+            margin-top: 0%;
+            color: rgb(153, 157, 156);
+        }
+    }
+    
+}
+/* About , contact and skills heading section */
+
+
+.section2{
+    display: flex;
+    margin-left: 250px;
+    
+    
+    .sec2left{
+        #leftuu {
+            animation-name: sec2leftuu;
+            animation-range: entry 0% cover 40%;
+            animation-timeline: view();
+            
+        }
+        margin-left: 25px;
+        margin-right: 25px;
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        h2{
+            color: #48CFCB;
+        }
+        h4{
+            font-size: 17px;
+            margin-bottom: 0%;
+            color: rgb(101, 101, 101);
+        }
+        p{
+            max-width: 530px;
+            font-size: 17px;
+            font-weight: 600;
+            color: rgb(101, 101, 101);
+
+        }
+        h5{
+            font-size: 15px;
+            margin-top: 0%;
+            color: rgb(160, 160, 160);
+        }
+    }
+    
+    @keyframes sec2leftuu {
+        from {
+            scale:0.5;
+            opacity: 0;
+        }
+
+        to {
+            scale:1;
+            opacity: 1;
+            
+        }
+    }
+    .sec2right{
+        margin-left:200px;
+        margin-top: 50px;
+        img{
+            border-radius: 48%;
+            border: 2px solid #48CFCB;
+            box-shadow: 1px 1px 600px 2px #48CFCB;
+        }
+    }
+}
+@media only screen and (min-width:0px) and (max-width:570px){
+    .section2{  
+        margin: 0%;
+        display: grid;
+        justify-content: center;
+        .sec2left{
+            max-width: 400px;
+            margin: 0%;
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: center;
+            h1{
+                font-size: 20px;
+            }
+        }
+        .sec2right{
+            margin: 0%;
+            padding-left:100px;
+            padding-right: 100px;
+            img{
+                display: none;
+                width: 200px;
+                height: 200px;
+                border-radius: 500px;
+                
+            }
+        }
+    }
+}
+/* section2 responsive and css*/
+
+
+.section3{
+    h1{
+        color: #48CFCB;
+        font-size: xx-large;
+        padding-left: 200px;
+        padding-bottom: 100px;
+    }
+    .hor-frend{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .fr-end{
+        width: 200px;
+        h3{
+            text-align: center;
+        }
+    }
+}
+@media only screen and (min-width:0px) and (max-width:570px){
+    .section3{
+        h1{
+            text-align: center;
+            padding: 0%;
+        }
+        .hor-frend{
+            display: grid;
+        }
+        
+        .fr-end{
+            width: 100px;
+            h3{
+                text-align: center;
+            }
+            img{
+                width:100px;
+            }
+        }
+    }
+}
+/* section3 responsive and css */
+
+
+.section4{
+    form{
+        table{
+            display: grid;
+            justify-content: center;
+            padding-top: 40px;
+            padding-bottom: 60px;
+            .tabrow{
+                padding: 20px;
+            }
+            td{
+                padding: 20px;
+                font-size: 18px;
+                input{
+                    width: 500px;
+                    border-radius: 10px;
+                    padding: 8px;
+                    border: 1px solid #48CFCB;
+                }
+                button{
+                    padding: 10px;
+                    border: 2px solid #48CFCB;
+                    font-size: 14px;
+                    letter-spacing: 3px;
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width:0px) and (max-width:570px){
+    .section4{
+        form{
+            table{
+                td{
+                    padding: 15px;
+                    input{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+
+.section5{
+    height: 6vh;
+    background-color: #48CFCB;
+    h3{
+        height: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:570px){
+    h3{
+        height: 5vh;
+    }
+    
+}
+
+#edit{
+    animation-name: animati;
+    animation-range: entry 0% cover 40% ;
+    animation-timeline: view();
+
+}
+
+@keyframes animati{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
